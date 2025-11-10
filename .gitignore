@@ -1,0 +1,10 @@
+# QUANTUM GITIGNORE 2027
+node_modules/
+dist/
+build/
+.env
+.DS_Store
+*.log
+.cache
+coverage/
+.quantum_cache/

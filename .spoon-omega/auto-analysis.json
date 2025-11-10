@@ -1,0 +1,62 @@
+{
+  "analysis": {
+    "os": {
+      "platform": "linux",
+      "arch": "x64",
+      "release": "6.16.8+kali-amd64",
+      "type": "Linux",
+      "version": "Kali GNU/Linux Rolling"
+    },
+    "hardware": {
+      "cpus": 4,
+      "cpuModel": "Intel(R) Core(TM) i7-4650U CPU @ 1.70GHz",
+      "totalMemory": "8 GB",
+      "freeMemory": "4 GB",
+      "uptime": "40 hours"
+    },
+    "tools": {
+      "node": "v22.20.0",
+      "npm": "10.9.3",
+      "python": "Python 3.13.7",
+      "git": "git version 2.51.0",
+      "docker": "Docker version 28.5.1, build e180ab8",
+      "metasploit": "Installed",
+      "nmap": "Installed",
+      "wireshark": "Installed"
+    },
+    "network": {
+      "hostname": "kali",
+      "interfaces": [
+        "lo",
+        "wlan0"
+      ],
+      "primaryInterface": "wlan0",
+      "internet": "Connected"
+    },
+    "security": {
+      "user": "cube",
+      "home": "kali",
+      "sudo": "Available",
+      "firewall": "Unknown",
+      "updates": "1 packages available"
+    },
+    "recommendations": [
+      {
+        "type": "kali-optimization",
+        "priority": "high",
+        "action": "spoon-omega create kali-tools --security",
+        "description": "Optimize Kali Linux for security development"
+      }
+    ]
+  },
+  "autoConfigured": true,
+  "timestamp": "2025-10-28T00:08:13.728Z",
+  "recommendations": [
+    {
+      "type": "kali-optimization",
+      "priority": "high",
+      "action": "spoon-omega create kali-tools --security",
+      "description": "Optimize Kali Linux for security development"
+    }
+  ]
+}

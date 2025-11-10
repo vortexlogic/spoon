@@ -1,0 +1,12 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+echo "Running Spoon Omega Analysis..."
+npx spoon-omega-cli analyse .
+
+if [ $? -ne 0 ]; then
+  echo "Spoon Omega Analysis failed. Please fix the issues before pushing."
+  exit 1
+else
+  echo "Spoon Omega Analysis passed!"
+fi
