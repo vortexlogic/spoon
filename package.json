@@ -1,0 +1,15 @@
+{
+  "name": "spoon-omega-nexus",
+  "version": "13.0.0",
+  "description": "Cosmic reality generation engine - Mouse/Tank/Seraph Nexus",
+  "main": "spoon-nexus.js",
+  "bin": {
+    "spoon-nexus": "./spoon-nexus.js",
+    "spoon": "./spoon-nexus.js"
+  },
+  "scripts": {
+    "start": "node spoon-nexus.js",
+    "dev": "node spoon-nexus.js --development",
+    "cosmic": "node spoon-nexus.js --neo --quantum"
+  }
+}
