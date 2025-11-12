@@ -1,0 +1,26 @@
+const express = require('express');
+const cors = require('cors'); // Install with: npm install cors
+const app = express();
+const port = 5000;
+
+app.use(cors()); // Enable CORS for all routes
+
+app.get('/api/hospital-value', (req, res) => {
+  const data = {
+    headline: 'Hospitals: Cornerstones of Community Health',
+    description: 'Hospitals provide essential medical care, conduct vital research, and contribute to the overall well-being of society.',
+    benefits: [
+      'Emergency Medical Services',
+      'Specialized Treatments',
+      'Preventative Care',
+      'Research and Innovation',
+      'Community Health Programs'
+    ],
+    source: 'World Health Organization'
+  };
+  res.json(data);
+});
+
+app.listen(port, () => {
+  console.log(`Server listening on port ${port}`);
+});
